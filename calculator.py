@@ -1,23 +1,3 @@
-#!/usr/bin/env python3
-"""Advanced command-line calculator.
-
-Features
---------
-* Safe: expressions are parsed with `ast` and evaluated against a whitelist, so
-  nothing the user types can run arbitrary code (unlike eval()).
-* Operators: + - * / // % **  (^ also works as a power operator) and parentheses.
-* Functions: sqrt, abs, round, floor, ceil, exp, ln, log, log2, sin, cos, tan,
-  asin, acos, atan, sinh, cosh, tanh, degrees, radians, factorial, gcd, lcm,
-  comb, perm, min, max.
-* Constants: pi, e, tau.
-* Variables (x = 5 * 2), `ans` for the previous result, history, deg/rad mode.
-
-Usage
------
-    python calculator.py                   interactive mode
-    python calculator.py "2 * (3 + 4)"     evaluate once and exit
-    python calculator.py --deg "sin(90)"   one-shot in degree mode
-"""
 from __future__ import annotations
 
 import ast
